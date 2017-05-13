@@ -1,5 +1,6 @@
 # Pythonizacao
 
-- Basico
+- Básico
 - Avançado
-- Scprits
+- Scprits para Sistemas Unix
+- Scprits Complexos
