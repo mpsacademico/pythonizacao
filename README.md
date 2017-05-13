@@ -1,0 +1,5 @@
+# Pythonizacao
+
+- Basico
+- Avançado
+- Scprits
