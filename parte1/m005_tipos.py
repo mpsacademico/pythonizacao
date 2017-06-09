@@ -68,3 +68,59 @@ print(1 != 0) # diferente
 print("<<, >>, &, |, ^, ~")
 
 # --------------------------------------------------------------------
+
+print("Textos") # imutável - cada alteração gera uma nova string
+
+# inicialização - tente adotar um padrão
+aspasSimples = 'com aspas simples'
+aspasDuplas = "com aspas duplas"
+linhasConsecutivas = '''1
+inicializa-se com 3 aspas simples
+ou com 3 aspas duplas
+2'''
+print(aspasSimples)
+print(aspasDuplas)
+print(linhasConsecutivas)
+
+# concatenação
+animal = 'gato'
+cor = "preto"
+print(animal + " é " + cor)
+
+# interpolação - é mais eficiente que concatenação
+print('A palavra %s tem %d letras' % (animal, len(animal)))
+'''
+Símbolos para interpolação:
+%s - string
+%d - inteiro
+%o - octal
+%x - hexadecimal
+%f - real
+%e - real exponencial
+%% - sinal de porcentagem
+'''
+print("Octal = %o, Hexadecimal = %x"%(12, 12)) # conversão automática para outras bases
+print("%05d" % (1)) # formatação de números - zeros à esquerda (5 zeros a esquerda do decimal)
+print("%.1f" % (45.99)) # formatação de números - casas decimais (1 casa decimal após o ponto)
+print('%.1f%%, %.2e' % (6.777, 0.00295))
+
+# interpolação com format - útil em laços de repetição
+frase = "{0} - {1} - {2}"
+print(frase.format('Eu',"sou","filho de Deus"))
+frase = "Hora: {hora: 02d} Minuto: {minuto: 02d}"
+print(frase.format(hora=14, minuto=1))
+print("Pi =", format(3.14159, '.3e'))
+
+# String como sequência no FOR
+for caractere in animal:
+	print(caractere)
+	
+# uso de métodos, pois String são objetos
+print(animal.upper())
+
+# consistência nas operações
+print(5 * "A")
+
+
+
+
