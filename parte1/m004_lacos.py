@@ -35,6 +35,7 @@ for saque in range(1, 101, 1):
 else:
 	print("ELSE não é executado, pois o laço sofreu um break")
 	
+# --------------------------------------------------------------------
 
 print("WHILE") # repete enquanto a codição for verdadeira
 
