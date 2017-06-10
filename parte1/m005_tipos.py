@@ -121,6 +121,26 @@ print(animal.upper())
 # consistência nas operações
 print(5 * "A")
 
+# fatias (slices) de strings - obtidas por índices em colchete
+'''
+*posições de uma string:
+m a c a c o
+0 1 2 3 4 5
+*índices para fatiamento:
+string[início:fim+1:intervalo]
+os parâmetros, se não informados, correspondem à:
+ - início: 0
+ - fim+1: tamanho do objeto
+ - intervalo: 1 (entre caracteres)
+'''
+s = 'macaco'
+print(s[0], s[1], s[2], s[3], s[4], s[5]) # acesso a posições individuais - índice começa em 0
+print(s[0:], s[1:], s[2:], s[3:], s[4:], s[5:]) # pega da posição inicial informada até o tamanho do objeto
+print(s[0:2], s[1:3], s[2:4], s[3:5], s[4:5], s[5]) # pega da posição inicial informada até o fim informado
+print(s[-0], s[-1], s[-2], s[-3], s[-4], s[-5]) # começa do final se forem negativos
+print(s[0:5:2]) # 2 é o intervalo entre caracteres que serão selecionados m X c X c
+print(s[::-1]) # invertendo a string
+print("radar"[::-1]) # não dá muito certo com palíndromos :P
 
 
 
