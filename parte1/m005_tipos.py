@@ -142,5 +142,36 @@ print(s[0:5:2]) # 2 é o intervalo entre caracteres que serão selecionados m X 
 print(s[::-1]) # invertendo a string
 print("radar"[::-1]) # não dá muito certo com palíndromos :P
 
+# unicode
+texto = "texto"
+print(texto, type(texto))
+
+unicode = u'Hüsker Dü'
+print(unicode, repr(unicode), type(unicode)) # str
+
+str = unicode.encode('latin1')
+print(str, repr(str), type(str)) # bytes
+
+unicode = str.decode('latin1')
+print(unicode, repr(unicode), type(unicode)) # str
+
+# módulo string
+import string
+
+alfabeto = string.ascii_letters # string com o alfabeto
+print(alfabeto)
+
+template = string.Template('$string tem $inteiro anos') # template usa um dicionário para gerar a string
+string = template.substitute({'string': 'Joaquim', 'inteiro': 14}) 
+print(string)
+
+# strings mutáveis (são menos eficientes, consomem mais memória e CPU) - depreciado?
+'''
+import UserString
+mutavel = UserString.MutableString("pato")
+mutavel[0] = "g"
+print(mutavel, type(mutavel))
+'''
+
 
 
