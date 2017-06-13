@@ -277,5 +277,24 @@ print(pessoa)
 for chave, valor in pessoa.items(): # items() - lista de tuplas de chave e valor
 	print(chave, ':', valor) 
 
+# --------------------------------------------------------------------
 
+print("Verdadeiro, Falso e Nulo")
+txt = \
+'''bool é uma especialização de int
+True = 1
+False = 0, false (falso), none (nulo - NoneType), '' (string vazia),
+	    [] (lista vazia), () (tupla vazia), {} (dicionário vazio),
+		quaisquer estruturas com tamanho igual a zero		
+'''
+print(txt)
 
+print("Operados Lógicos - Booleanos")
+txt = '''
+and, or, not, is (duas referências para o mesmo objeto), in (item ocorrer em lista)
+- particularidades do cálculo:
+	0 and 3 = 0 | 0 or 3 = 3
+	2 and 3 = 3 | 2 or 3 = 2
+- all(), any()
+'''
+print(txt)
