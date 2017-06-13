@@ -2,7 +2,7 @@
 
 Este repositório tem por objetivo armazenar programas básicos e avançados na linguagem Python
 
-- Básico
+- Básico: tipos, controle de fluxo e laços
 - Avançado
 - Operações Diversas
 - Controle Estatístico
