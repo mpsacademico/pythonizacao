@@ -13,7 +13,7 @@ Tipos: mutáveis - contéudo da variável pode ser alterado; imutáveis - invers
 tipos e rotinas comuns estão na forma de builtins - sempre disponíveis em tempo de execução
 '''
 
-print("Números")
+print("Números") # imutáveis
 
 # tipos numéricos
 inteiro = 2 # int - e inteiro longo - limitado pela memória disponível
@@ -172,6 +172,110 @@ mutavel = UserString.MutableString("pato")
 mutavel[0] = "g"
 print(mutavel, type(mutavel))
 '''
+
+# --------------------------------------------------------------------
+
+print("Listas") # mutável - coleção de dados (objetos) heterogêneos 
+
+# criar nova lista
+animais = ['pato', 'ganso']
+print(animais[0]) # acessando a primeira posição
+
+# imprimir lista
+for animal in animais:
+	print(animal)
+
+# troca de elementos (último elemento)
+animais[-1] = "cachorro"
+
+# incluir elemento
+animais.append("gato")
+
+# remover elemento
+animais.remove("pato")
+
+# numeração de elementos
+for i, animal in enumerate(animais):
+	print(i, "-", animal)
+
+# inverter a lista (a operação é aplicada na lista)
+animais.reverse()
+print(animais)
+
+# ordenar a lista (a operação é aplicada na lista)
+animais.sort()
+print(animais)
+
+# fatiamento - assim como de strings
+print(animais[1:])
+
+
+# --------------------------------------------------------------------
+
+print("Tuplas") # imutável - semelhantes as listas
+
+# criar nova tupla 
+comida = ("Arroz", "Feijão", "Carne", 20, ["entrada", "prato principal", "sobremesa"]) # dados heterogêneos
+convidados = ("eu",) # tupla de um elemento deve conter a vírgula ao final
+issoEhUmaTupla = "elemento1", 1 # os parênteses são opcionais
+print(type(issoEhUmaTupla))
+
+# imprimir tupla
+print(comida)
+
+for c in comida:
+	print(c)
+	
+print(convidados[0])
+
+# qualquer tentativa de alteração das referências do objeto irão gerar erros
+#comida[0] = "arroz" # gera erro
+comida[4].append("bebida")
+
+# conversões tupla X lista - tuplas são estruturas mais simples, por isso computacionalmente mais eficientes
+lista = [1, 2, 3]
+print(type(lista))
+tupla = ("a", "b", "c")
+print(type(tupla))
+
+tupla = tuple(lista) # lista para tupla
+print(type(tupla))
+
+lista = list(tupla) # tupla para lista
+print(type(lista))
+
+'''
+set e frozenset sequências para operações com conjuntos
+'''
+
+# --------------------------------------------------------------------
+
+print("Dicionários") # mutável - lista de associações entre chave única (elemento imutável) e valor (elemento mutável) - sem garantias de ordenamento
+
+# criar dicionário
+pessoa = {'nome': 'Paulo', 'idade': 22}
+
+# acessar elemento
+print(pessoa['nome'])
+
+# adicionar elemento
+pessoa['endereco'] = "Rua dos Alfeneiros"
+
+# apagar elemento
+del pessoa['idade']
+
+# obter elementos diversos da estrutura de um dicionário
+itens = pessoa.items()
+chaves = pessoa.keys()
+valores = pessoa.values()
+print(itens)
+print(chaves)
+print(valores)
+
+# imprimir dicionário
+print(pessoa)
+for chave, valor in pessoa.items(): # items() - lista de tuplas de chave e valor
+	print(chave, ':', valor) 
 
 
 
