@@ -10,7 +10,7 @@ Quando eu sou importado pela primeira vez algo incrível acontece.
 Eu mudo de sobrenome, deixo de ser .py e viro .pyc ou .pyo. Geralmente eu vou morar dentro de um diretório chamado __pycache__.
 Dizem que esse processo chama-se compilação. Parece que a compilação faz com que eu chegue mais rápido das próximas vezes que for chamado.
 
-Em seguida, eu sou executado.
+Em seguida, eu sou executado. Se for necessário uma nova execução, é necessário usar um método chamado reload().
 '''
 
 resultado = []
