@@ -11,3 +11,7 @@ Este repositório tem por objetivo armazenar programas básicos e avançados na 
 
 ## Ambiente
 Python 3.5.2
+
+## Referências
+
+BORGES, L. E. **Python para Desenvolvedores:** Aborda Python 3.3. Rio de Janeiro: Novatec Editora, 2014.
